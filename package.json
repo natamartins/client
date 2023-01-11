@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
     "test": "jest",
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -s ./public"
   },
   "dependencies": {
     "@next/font": "13.1.1",
@@ -52,6 +53,7 @@
     "eslint-plugin-storybook": "^0.6.10",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
+    "plop": "^3.1.1",
     "prettier": "2.8.2"
   }
 }
